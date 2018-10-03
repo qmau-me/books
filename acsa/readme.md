@@ -2,7 +2,7 @@
 description: AWS Certified Solutions Architect - Associate Notes 2018
 ---
 
-# README
+# Index
 
 ## Textbook
 
