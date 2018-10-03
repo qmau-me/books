@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ INDEX](README.md)
+* [INDEX](README.md)
 
 ## ACSA
 
