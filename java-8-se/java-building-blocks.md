@@ -1,7 +1,3 @@
----
-description: 0412 - 0422
----
-
 # Java Building Blocks
 
 ## Exam objectives

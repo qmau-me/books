@@ -1,7 +1,3 @@
----
-description: 0422-0430
----
-
 # Operators and Statements
 
 ## Exam objectives
