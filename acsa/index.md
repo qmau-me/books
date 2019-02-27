@@ -29,5 +29,3 @@ description: AWS Certified Solutions Architect - Associate Notes 2018
 * [free exams quora](https://www.quora.com/Where-can-I-get-free-sample-questions-for-AWS-certification-exams)
 * [Quizlet 851 questions](https://quizlet.com/194513754/aws-certified-solutions-architect-associate-practice-questions-flash-cards/)
 
-## TIL
-* [ElasticCache can not be scaled down by cloud formation]
