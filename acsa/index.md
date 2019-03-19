@@ -17,7 +17,7 @@ description: AWS Certified Solutions Architect - Associate Notes 2018
 
 * [Tôi đã lấy chứng chỉ AWS Solution Architect Associate như thế nào](http://notcuder.com/toi-da-lay-chung-chi-aws-solutions-architect-associate-nhu-the-nao/)
 * [AWS Certified solution architect associate study notes](http://mistwire.com/2016/05/aws-certified-solutions-architect-associate-study-notes/)
-* [AWS-Certified-Solutions-Architect-Official-Study-Guide](./AWS-Certified-Solutions-Architect-Official-Study-Guide.pdf)
+* [AWS-Certified-Solutions-Architect-Official-Study-Guide](https://github.com/qmau-me/books/tree/ad0d8af3d902727234e27a2f96e5fca53aa70067/acsa/AWS-Certified-Solutions-Architect-Official-Study-Guide.pdf)
 
 ## Practicing exam
 
