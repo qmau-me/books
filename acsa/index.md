@@ -11,7 +11,8 @@ description: AWS Certified Solutions Architect - Associate Notes 2018
 ## Topics
 
 1. [S3](s3.md)
-2. EC2, EBS
+2. [EC2, EBS](ec2_ebs.md)
+3. [VPC](vpc.md)
 
 ## Refs
 
