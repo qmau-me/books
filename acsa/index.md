@@ -12,7 +12,7 @@ description: AWS Certified Solutions Architect - Associate Notes 2018
 
 1. [S3](s3.md)
 2. [EC2, EBS](ec2-and-ebs.md)
-3. [VPC](https://github.com/qmau-me/books/tree/9c3a764b93a0c66bebfe3802c476e701769c8f42/acsa/vpc.md)
+3. [VPC](vpc.md)
 
 ## Refs
 
