@@ -241,10 +241,98 @@ description: Amazon Elastic Compute Cloud and Amazon Elastic Block Store
 
 ### Elastic Block Store Basics
 
+* Provides persistent block-level storage volumes for EC2 instances
+* Automatically replicated within its AZ
+
 #### Types of Amazon EBS Volumes
 
-* 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Characteristic</th>
+      <th style="text-align:left">General-Purpose SSD</th>
+      <th style="text-align:left">Provisioned IOPS SSD</th>
+      <th style="text-align:left">Magnetic</th>
+      <th style="text-align:left">
+        <p></p>
+        <p><b>Throughput-Optimized HDD </b>
+        </p>
+      </th>
+      <th style="text-align:left">Cold HDD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Use cases</td>
+      <td style="text-align:left">
+        <ul>
+          <li>System boot volumes</li>
+          <li>Virtual desktops</li>
+          <li>Small-to-medium sized databases</li>
+          <li>Development and test environments</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Critical business applications that require sustained IOPS performance
+            or more than 10,000 IOPS or 160MB of throughput per volume</li>
+          <li>Large database workloads</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Cold workloads where data is infrequently accessed</li>
+          <li>Scenarios where the lowest storage cost is important</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>low-cost HDD, less than General-Purpose SSD</li>
+          <li>frequent-access, throughput-intensive workloads</li>
+          <li>examples: big data, data warehouses and log processing</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>less frequently accessed workloads</li>
+          <li>examples: colder data requiring fewer scans per day</li>
+          <li>less expensive than Throughput-Optimized HDD</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Volume size</td>
+      <td style="text-align:left">1GiB - 16GiB</td>
+      <td style="text-align:left">4GiB - 16GiB</td>
+      <td style="text-align:left">1GiB - 1TiB</td>
+      <td style="text-align:left">up-to 16GiB</td>
+      <td style="text-align:left">up-to 16GiB</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Maximum throughput</td>
+      <td style="text-align:left">160MB</td>
+      <td style="text-align:left">320MB</td>
+      <td style="text-align:left">40-90MB</td>
+      <td style="text-align:left">500MB</td>
+      <td style="text-align:left">250MB</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">IOPS performance</td>
+      <td style="text-align:left">Baseline performance of 3IOPS/GiB (up to 10,000 IOPS) with the ability
+        to burst to 3,000 IOPS for volumes under 1,000Gib</td>
+      <td style="text-align:left">Consistently performs at provisioned level, up to 20,000 IOPS maximum</td>
+      <td
+      style="text-align:left">Averages 100 IOPS, with the ability to bust to hundreds of IOPS</td>
+        <td
+        style="text-align:left">Maximum IOPS of 500</td>
+          <td style="text-align:left">maximum IOPS of 250</td>
+    </tr>
+  </tbody>
+</table>#### Amazon EBS-Optimized Instances
 
+* When using any volume type other than magnetic, EBS I/O is of consequence
+* Need to be prepared to take advantage of the I/O of the EBS volume
+* EBS-Optimized Instances 
 
 
 
