@@ -244,7 +244,7 @@ description: Amazon Elastic Compute Cloud and Amazon Elastic Block Store
 * Provides persistent block-level storage volumes for EC2 instances
 * Automatically replicated within its AZ
 
-#### Types of Amazon EBS Volumes
+### Types of Amazon EBS Volumes
 
 <table>
   <thead>
@@ -328,13 +328,44 @@ description: Amazon Elastic Compute Cloud and Amazon Elastic Block Store
           <td style="text-align:left">maximum IOPS of 250</td>
     </tr>
   </tbody>
-</table>#### Amazon EBS-Optimized Instances
+</table>### Amazon EBS-Optimized Instances
 
 * When using any volume type other than magnetic, EBS I/O is of consequence
 * Need to be prepared to take advantage of the I/O of the EBS volume
-* EBS-Optimized Instances 
+* Pay additional hourly charge
 
+### Protecting Data
 
+#### Backup/Recovery \(Snapshots\)
+
+* Point-in-time snapshots, incremental backup \(only save changed blocks\)
+* Taking Snapshots
+  * Data stored in an AWS controlled S3 storage 
+  * Access by AMZ EBS Snapshot
+  * Constrain to the region
+* Creating a Volume from a Snapshot
+  * Volume is created immediately but loaded lazily
+  * Can be used to increase the size of the EBS
+
+#### Recovering Volumes
+
+* Detach the volume from the failed instance
+* Can be attached to another instance
+
+#### Encryption Options
+
+* Using AWS KMS and AES-256 Algorithms
+* Encrypted volumes are automatically encrypted
+
+**Review questions: 75% → NEED TO REVIEW!**
+
+* vm import/export
+* instance store
+* reserved contract
+
+## MINDMAP
+
+![AWS Compute](../.gitbook/assets/aws-compute.png)
 
 
 
